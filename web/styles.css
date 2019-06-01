@@ -1,0 +1,49 @@
+header h1 {
+  padding: 0;
+  margin: 0 0 0.3em;
+  color: salmon;
+}
+
+header p {
+  margin: 0;
+  padding: 0;
+  color: lightslategray;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+nav li:after,
+.vertical-separator:after {
+  content: '/';
+  color: var(--separator);
+  margin-left: 0.7em;
+  margin-right: 0.4em;
+}
+
+nav li:last-child:after,
+.vertical-separator:last-child:after {
+  content: ''
+}
+
+hr {
+  height: 0;
+  border: 0;
+  margin: 20px 0px 30px;
+  border-top: 1px solid var(--separator);
+}
